@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRCS = $(filter-out ft_lst%.c, $(wildcard *.c))
+SRCS = $(filter-out %_bonus.c, $(wildcard *.c))
 OBJS = $(SRCS:.c=.o)
-BONUS_SRCS = $(wildcard ft_lst*.c)
+BONUS_SRCS = $(wildcard *_bonus.c)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 NAME = libft.a
